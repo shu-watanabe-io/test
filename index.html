@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンタルトレーニング - 心を鍛える</title>
+    <meta name="description" content="メンタルトレーニングで心の健康を保ち、ストレスを管理し、パフォーマンスを向上させましょう">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#" class="logo">
+                        <i class="fas fa-brain"></i>
+                        <span>メンタルトレーニング</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">ホーム</a></li>
+                        <li><a href="#mental" class="nav-link">メンタル</a></li>
+                        <li><a href="#about" class="nav-link">トレーニングとは</a></li>
+                        <li><a href="#exercises" class="nav-link">エクササイズ</a></li>
+                        <li><a href="#techniques" class="nav-link">テクニック</a></li>
+                        <li><a href="#tracker" class="nav-link">記録</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">心を鍛え、<br>可能性を広げる</h1>
+                <p class="hero-subtitle">科学的根拠に基づいたメンタルトレーニングで、<br>ストレス管理とパフォーマンス向上を実現</p>
+                <div class="hero-buttons">
+                    <a href="#exercises" class="btn btn-primary">トレーニングを始める</a>
+                    <a href="#about" class="btn btn-outline">詳しく見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- メンタルとは -->
+    <section id="mental" class="mental">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">メンタル</h2>
+                <p class="section-subtitle">メンタルが強い人・弱い人それぞれの特徴を捉えておくと<br>メンタルトレーニングを行う際に目指す姿や取り組むべき現状を捉えやすくなります</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" id="openModalMentalStrong">
+                    <div class="about-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>メンタルが強い人の特徴</h3>
+                    <p>常にポジティブな精神で前向き</p>
+                    <p>失敗を恐れない</p>
+                    <p>苦しいときほど笑顔</p>
+                </div>
+
+                <div class="about-card" id="openModalMentalWeak">
+                    <div class="about-icon">
+                        <i class="fa-solid fa-heart-crack"></i>
+                    </div>
+                    <h3>メンタルが弱い人の特徴</h3>
+                    <p>頭が良い</p>
+                    <p>真面目な努力家である</p>
+                    <p>完璧主義者である</p>
+                    <p>内向的である</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal_mental_strong" class="modal_mental_strong">
+	  <div class="modal_mental_strong-content">
+	    <span id="modal_mental_strong_close" class="modal_mental_strong-close">&times;</span>
+	    <p>メンタルが強い人は、どんな状況下でも物事を前向きに捉える思考を持ちます。</p><br>
+		<p>この思考によって困難や課題に取り組むことを「成長の機会」と受け止め、失敗を恐れずに行動を起こすのです。</p><br>
+		<p>ポジティブな思考に基づいた行動は感情にも良い影響を与え、苦悩してしまうような場面でも笑顔を欠かさずに努力する特徴があります</p>
+	  </div>
+	</div>
+
+    <div id="modal_mental_weak" class="modal_mental_weak">
+	  <div class="modal_mental_weak-content">
+	    <span id="modal_mental_weak_close" class="modal_mental_weak-close">&times;</span>
+		<p>頭の回転が早い人や高い思考力を持つ人ほど、メンタルが弱い傾向があります。</p>
+		<p>なぜなら現状を深く理解し分析しやすく最悪の状態をも予測できてしまうため、ネガティブな思考に至る可能性が高いためです。</p>
+		<br>
+		<p>行動面においては真面目で完璧を追い求める特徴があると、少しでも良い結果が得られなかった際に落ち込みやすく挫折や無力を感じやすくなってしまいます。</p>
+		<br>
+		<p>積極性がなく内向的である場合も、メンタルの弱い特徴の1つです。</p>
+		<p>悩みや思いを自分自身だけで抱え込んでしまうことで孤独を感じ、物事をマイナスな方向に捉えやすくなってしまいます。</p>
+		<br>
+		<p>※特徴＝メンタルが弱いわけではない、傾向にあるということ</p>
+	  </div>
+	</div>
+	
+	
+    <!-- メンタルトレーニングとは -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">メンタルトレーニングとは</h2>
+                <p class="section-subtitle">心の健康とパフォーマンス向上のための科学的アプローチ</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>ストレス管理</h3>
+                    <p>日常のストレスを効果的に管理し、心の安定を保つテクニックを習得します。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>パフォーマンス向上</h3>
+                    <p>集中力、モチベーション、自信を高め、最高のパフォーマンスを発揮します。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>自己認識</h3>
+                    <p>自分の思考パターンや感情を理解し、より良い意思決定ができるようになります。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>ワークライフバランス</h3>
+                    <p>仕事とプライベートの調和を保ち、充実した生活を送るためのスキルを身につけます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- エクササイズセクション -->
+    <section id="exercises" class="exercises">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">メンタルエクササイズ</h2>
+                <p class="section-subtitle">実践的なトレーニングで心を鍛えましょう</p>
+            </div>
+            <div class="exercise-tabs">
+                <button class="tab-button active" data-tab="breathing">呼吸法</button>
+                <button class="tab-button" data-tab="meditation">瞑想</button>
+                <button class="tab-button" data-tab="visualization">イメージトレーニング</button>
+                <button class="tab-button" data-tab="affirmation">アファメーション</button>
+            </div>
+            
+            <!-- 呼吸法 -->
+            <div id="breathing" class="tab-content active">
+                <div class="exercise-content">
+                    <div class="exercise-info">
+                        <h3><i class="fas fa-wind"></i> 4-7-8呼吸法</h3>
+                        <p>リラックスと落ち着きをもたらす効果的な呼吸テクニック</p>
+                        <ul class="exercise-steps">
+                            <li>4秒かけて鼻から息を吸う</li>
+                            <li>7秒間息を止める</li>
+                            <li>8秒かけて口から息を吐く</li>
+                            <li>これを4回繰り返す</li>
+                        </ul>
+                        <button class="btn btn-primary" id="startBreathing">エクササイズを開始</button>
+                    </div>
+                    <div class="exercise-visual">
+                        <div class="breathing-circle" id="breathingCircle">
+                            <span id="breathingText">準備</span>
+                        </div>
+                        <div class="breathing-counter" id="breathingCounter"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 瞑想 -->
+            <div id="meditation" class="tab-content">
+                <div class="exercise-content">
+                    <div class="exercise-info">
+                        <h3><i class="fas fa-spa"></i> マインドフルネス瞑想</h3>
+                        <p>今この瞬間に意識を向け、心の平穏を得るための瞑想</p>
+                        <ul class="exercise-steps">
+                            <li>快適な姿勢で座る</li>
+                            <li>目を閉じて呼吸に注意を向ける</li>
+                            <li>思考が浮かんでも判断せず観察する</li>
+                            <li>5-10分間続ける</li>
+                        </ul>
+                        <div class="timer-controls">
+                            <select id="meditationDuration" class="timer-select">
+                                <option value="5">5分</option>
+                                <option value="10" selected>10分</option>
+                                <option value="15">15分</option>
+                                <option value="20">20分</option>
+                            </select>
+                            <button class="btn btn-primary" id="startMeditation">瞑想を開始</button>
+                        </div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div class="meditation-timer" id="meditationTimer">
+                            <div class="timer-display" id="timerDisplay">10:00</div>
+                            <div class="timer-progress" id="timerProgress">
+                                <div class="progress-bar" id="progressBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- イメージトレーニング -->
+            <div id="visualization" class="tab-content">
+                <div class="exercise-content">
+                    <div class="exercise-info">
+                        <h3><i class="fas fa-eye"></i> ビジュアライゼーション</h3>
+                        <p>成功をイメージし、目標達成への道筋を明確にする</p>
+                        <ul class="exercise-steps">
+                            <li>リラックスした状態で目を閉じる</li>
+                            <li>目標達成した自分を鮮明にイメージする</li>
+                            <li>五感を使って詳細に感じる</li>
+                            <li>ポジティブな感情を味わう</li>
+                        </ul>
+                        <div class="visualization-prompts">
+                            <h4>イメージガイド</h4>
+                            <div class="prompt-list" id="promptList">
+                                <div class="prompt-card">あなたは目標を達成した瞬間にいます...</div>
+                            </div>
+                            <button class="btn btn-primary" id="startVisualization">ガイドを開始</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- アファメーション -->
+            <div id="affirmation" class="tab-content">
+                <div class="exercise-content">
+                    <div class="exercise-info">
+                        <h3><i class="fas fa-quote-left"></i> ポジティブアファメーション</h3>
+                        <p>肯定的な言葉で潜在意識に働きかけ、自信と前向きな思考を育む</p>
+                        <ul class="exercise-steps">
+                            <li>肯定的な言葉を声に出して読む</li>
+                            <li>その言葉の意味を感じる</li>
+                            <li>毎日繰り返す</li>
+                            <li>自分に合った言葉を選ぶ</li>
+                        </ul>
+                    </div>
+                    <div class="exercise-visual">
+                        <div class="affirmation-card" id="affirmationCard">
+                            <p class="affirmation-text" id="affirmationText">私は価値ある存在です</p>
+                            <button class="btn btn-outline" id="nextAffirmation">次のアファメーション</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- テクニックセクション -->
+    <section id="techniques" class="techniques">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">メンタルテクニック</h2>
+                <p class="section-subtitle">日常で使える実践的なスキル</p>
+            </div>
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>目標設定</h3>
+                    <p>SMARTゴールの設定方法を学び、明確な目標を立てる</p>
+                    <ul>
+                        <li>具体的（Specific）</li>
+                        <li>測定可能（Measurable）</li>
+                        <li>達成可能（Achievable）</li>
+                        <li>関連性（Relevant）</li>
+                        <li>期限（Time-bound）</li>
+                    </ul>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>認知の再構築</h3>
+                    <p>ネガティブな思考パターンを認識し、ポジティブに変換</p>
+                    <ul>
+                        <li>自動思考の認識</li>
+                        <li>思考の検証</li>
+                        <li>代替思考の探索</li>
+                        <li>バランスの取れた視点</li>
+                    </ul>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>タイムマネジメント</h3>
+                    <p>効率的な時間管理で生産性とストレス管理を向上</p>
+                    <ul>
+                        <li>優先順位の設定</li>
+                        <li>タスクの分解</li>
+                        <li>集中時間の確保</li>
+                        <li>休憩の重要性</li>
+                    </ul>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>レジリエンス</h3>
+                    <p>困難な状況から回復する力を養う</p>
+                    <ul>
+                        <li>逆境の捉え方</li>
+                        <li>サポートネットワーク</li>
+                        <li>自己効力感</li>
+                        <li>柔軟な思考</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- トラッカーセクション -->
+    <section id="tracker" class="tracker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">トレーニング記録</h2>
+                <p class="section-subtitle">あなたの進捗を可視化しましょう</p>
+            </div>
+            <div class="tracker-content">
+                <div class="tracker-form">
+                    <h3>今日のトレーニング</h3>
+                    <form id="trainingForm">
+                        <div class="form-group">
+                            <label for="exerciseType">エクササイズ</label>
+                            <select id="exerciseType" required>
+                                <option value="">選択してください</option>
+                                <option value="呼吸法">呼吸法</option>
+                                <option value="瞑想">瞑想</option>
+                                <option value="イメージトレーニング">イメージトレーニング</option>
+                                <option value="アファメーション">アファメーション</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">時間（分）</label>
+                            <input type="number" id="duration" min="1" max="120" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mood">気分（1-10）</label>
+                            <input type="range" id="mood" min="1" max="10" value="5">
+                            <span class="mood-value" id="moodValue">5</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">メモ</label>
+                            <textarea id="notes" rows="3" placeholder="今日の感想や気づきを記録..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">記録を保存</button>
+                    </form>
+                </div>
+                <div class="tracker-stats">
+                    <h3>統計情報</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="totalDays">0</span>
+                                <span class="stat-label">日間継続</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="totalMinutes">0</span>
+                                <span class="stat-label">分トレーニング</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="avgMood">0</span>
+                                <span class="stat-label">平均気分</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-sessions">
+                        <h4>最近のセッション</h4>
+                        <div id="recentList" class="session-list">
+                            <p class="empty-message">まだ記録がありません</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-brain"></i> メンタルトレーニング</h4>
+                    <p>心の健康とパフォーマンス向上のための総合プラットフォーム</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#about">トレーニングとは</a></li>
+                        <li><a href="#exercises">エクササイズ</a></li>
+                        <li><a href="#techniques">テクニック</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>リソース</h4>
+                    <ul>
+                        <li><a href="#">ブログ</a></li>
+                        <li><a href="#">ガイド</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 メンタルトレーニング. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
